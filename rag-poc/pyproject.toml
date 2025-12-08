@@ -1,0 +1,16 @@
+[project]
+name = "rag-poc"
+version = "0.1.0"
+description = ""
+authors = [{ name = "behike56", email = "fxy.x@lambda-publishing.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["httpx (>=0.28.1,<0.29.0)", "mcp (>=1.23.1,<2.0.0)"]
+
+[tool.poetry]
+packages = [{ include = "rag_poc", from = "lambda/src" }]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
